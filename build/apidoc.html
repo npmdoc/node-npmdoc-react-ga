@@ -1,0 +1,1524 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/react-ga/react-ga"
+
+    >react-ga (v2.2.0)</a>
+</h1>
+<h4>React Google Analytics Module.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-ga">module react-ga</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.OutboundLink">
+            function <span class="apidocSignatureSpan">react-ga.</span>OutboundLink
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.event">
+            function <span class="apidocSignatureSpan">react-ga.</span>event
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.exception">
+            function <span class="apidocSignatureSpan">react-ga.</span>exception
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.ga">
+            function <span class="apidocSignatureSpan">react-ga.</span>ga
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.initialize">
+            function <span class="apidocSignatureSpan">react-ga.</span>initialize
+            <span class="apidocSignatureSpan">(gaTrackingID, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.modalview">
+            function <span class="apidocSignatureSpan">react-ga.</span>modalview
+            <span class="apidocSignatureSpan">(modalName)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.outboundLink">
+            function <span class="apidocSignatureSpan">react-ga.</span>outboundLink
+            <span class="apidocSignatureSpan">(args, hitCallback)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.pageview">
+            function <span class="apidocSignatureSpan">react-ga.</span>pageview
+            <span class="apidocSignatureSpan">(path)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.send">
+            function <span class="apidocSignatureSpan">react-ga.</span>send
+            <span class="apidocSignatureSpan">(fieldObject)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.set">
+            function <span class="apidocSignatureSpan">react-ga.</span>set
+            <span class="apidocSignatureSpan">(fieldsObject)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.timing">
+            function <span class="apidocSignatureSpan">react-ga.</span>timing
+            <span class="apidocSignatureSpan">(args)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.</span>OutboundLink.propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.</span>OutboundLink.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.</span>OutboundLink.prototype.__reactAutoBindPairs</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.</span>plugin</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-ga.OutboundLink">module react-ga.OutboundLink</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.OutboundLink.OutboundLink">
+            function <span class="apidocSignatureSpan">react-ga.</span>OutboundLink
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.OutboundLink.origTrackLink">
+            function <span class="apidocSignatureSpan">react-ga.OutboundLink.</span>origTrackLink
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.OutboundLink.trackLink">
+            function <span class="apidocSignatureSpan">react-ga.OutboundLink.</span>trackLink
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-ga.OutboundLink.</span>displayName</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-ga.OutboundLink.propTypes">module react-ga.OutboundLink.propTypes</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.OutboundLink.propTypes.eventLabel">
+            function <span class="apidocSignatureSpan">react-ga.OutboundLink.propTypes.</span>eventLabel
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-ga.OutboundLink.prototype">module react-ga.OutboundLink.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.OutboundLink.prototype.componentDidMount">
+            function <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>componentDidMount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.OutboundLink.prototype.componentWillUnmount">
+            function <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>componentWillUnmount
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.OutboundLink.prototype.constructor">
+            function <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>constructor
+            <span class="apidocSignatureSpan">(props, context, updater)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.OutboundLink.prototype.handleClick">
+            function <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>handleClick
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.OutboundLink.prototype.render">
+            function <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>render
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>__reactAutoBindPairs</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>childContextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>componentDidUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>componentWillMount</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>componentWillReceiveProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>componentWillUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>contextTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>getChildContext</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>getDefaultProps</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>getInitialState</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>mixins</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>propTypes</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>shouldComponentUpdate</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>statics</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>updateComponent</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-ga.OutboundLink.prototype.__reactAutoBindPairs">module react-ga.OutboundLink.prototype.__reactAutoBindPairs</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.OutboundLink.prototype.__reactAutoBindPairs.1">
+            function <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.__reactAutoBindPairs.</span>1
+            <span class="apidocSignatureSpan">(e)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">string <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.__reactAutoBindPairs.</span>0</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.react-ga.plugin">module react-ga.plugin</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.plugin.execute">
+            function <span class="apidocSignatureSpan">react-ga.plugin.</span>execute
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.react-ga.plugin.require">
+            function <span class="apidocSignatureSpan">react-ga.plugin.</span>require
+            <span class="apidocSignatureSpan">(name, options)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-ga" id="apidoc.module.react-ga">module react-ga</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.OutboundLink" id="apidoc.element.react-ga.OutboundLink">
+        function <span class="apidocSignatureSpan">react-ga.</span>OutboundLink
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">OutboundLink = function (props, context, updater) {
+  // This constructor gets overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    process.env.NODE_ENV !== &#x27;production&#x27; ? warning(this instanceof Constructor, &#x27;Something is calling a React component directly
+. Use a factory or &#x27; + &#x27;JSX instead. See: https://fb.me/react-legacyfactory&#x27;) : void 0;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindPairs.length) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn&#x27;t have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    // We allow auto-mocks to proceed as if they&#x27;re returning null.
+    if (initialState === undefined &#x26;&#x26; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  _invariant(typeof initialState === &#x27;object&#x27; &#x26;&#x26; !Array.isArray(initialState), &#x27;%s.getInitialState(): must return an object or null
+&#x27;, Constructor.displayName || &#x27;ReactCompositeComponent&#x27;);
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.event" id="apidoc.element.react-ga.event">
+        function <span class="apidocSignatureSpan">react-ga.</span>event
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">event = function (args) {
+  if (typeof ga === &#x27;function&#x27;) {
+
+    // Simple Validation
+    if (!args || !args.category || !args.action) {
+      warn(&#x27;args.category AND args.action are required in event()&#x27;);
+      return;
+    }
+
+    // Required Fields
+    var fieldObject = {
+      hitType: &#x27;event&#x27;,
+      eventCategory: _format(args.category),
+      eventAction: _format(args.action)
+    };
+
+    // Optional Fields
+    if (args.label) {
+      fieldObject.eventLabel = _format(args.label);
+    }
+
+    if (args.hasOwnProperty(&#x27;value&#x27;)) {
+      if (typeof args.value !== &#x27;number&#x27;) {
+        warn(&#x27;Expected `args.value` arg to be a Number.&#x27;);
+      } else {
+        fieldObject.eventValue = args.value;
+      }
+    }
+
+    if (args.nonInteraction) {
+      if (typeof args.nonInteraction !== &#x27;boolean&#x27;) {
+        warn(&#x27;`args.nonInteraction` must be a boolean.&#x27;);
+      } else {
+        fieldObject.nonInteraction = args.nonInteraction;
+      }
+    }
+
+    if (args.transport) {
+      if (typeof args.transport !== &#x27;string&#x27;) {
+        warn(&#x27;`args.transport` must be a string.&#x27;);
+      } else {
+        if ([&#x27;beacon&#x27;, &#x27;xhr&#x27;, &#x27;image&#x27;].indexOf(args.transport) === -1) {
+          warn(&#x27;`args.transport` must be either one of these values: `beacon`, `xhr` or `image`&#x27;);
+        }
+
+        fieldObject.transport = args.transport;
+      }
+    }
+
+    // Send to GA
+    this.send(fieldObject);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+ReactGA.modalview(&#x27;/about/contact-us&#x27;);
+```
+
+|Value|Notes|
+|------|-----|
+|modalName|`String`. E.g. &#x27;login&#x27;, &#x27;read-terms-and-conditions&#x27;|
+
+#### ReactGA.<span class="apidocCodeKeywordSpan">event</span>(args)
+
+Tracking in-page `event` interactions is key to understanding the use of any interactive web property. This is how we record user
+ interactions that don&#x27;t trigger a change in URL.
+
+###### Examples
+
+```js
+ReactGA.event({
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.exception" id="apidoc.element.react-ga.exception">
+        function <span class="apidocSignatureSpan">react-ga.</span>exception
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">exception = function (args) {
+  if (typeof ga === &#x27;function&#x27;) {
+
+    // Required Fields
+    var fieldObject = {
+      hitType: &#x27;exception&#x27;
+    };
+
+    // Optional Fields
+    if (args.description) {
+      fieldObject.exDescription = _format(args.description);
+    }
+
+    if (typeof args.fatal !== &#x27;undefined&#x27;) {
+      if (typeof args.fatal !== &#x27;boolean&#x27;) {
+        warn(&#x27;`args.fatal` must be a boolean.&#x27;);
+      } else {
+        fieldObject.exFatal = args.fatal;
+      }
+    }
+
+    // Send to GA
+    this.send(fieldObject);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+|eventLabel|`String`. Required. Description of where the outbound link points to. Either as a URL, or a string.|
+|to|`String`. Required. URL the link leads to.|
+|target|`String`. Optional. To open the link in a new tab, use a value of `_blank`.|
+
+For bower, use the `&#x3c;ReactGA.OutboundLink&#x3e;` component.
+
+
+#### ReactGA.<span class="apidocCodeKeywordSpan">exception</span>(args)
+
+[GA exception tracking](https://developers.google.com/analytics/devguides/collection/analyticsjs/exceptions)
+
+###### Example
+
+```js
+ReactGA.exception({
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.ga" id="apidoc.element.react-ga.ga">
+        function <span class="apidocSignatureSpan">react-ga.</span>ga
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">ga = function () {
+  if (arguments.length &#x3e; 0) {
+    ga.apply(this, arguments);
+    if (_debug) {
+      log(&#x27;called ga(\&#x27;arguments\&#x27;);&#x27;);
+      log(&#x27;with arguments: &#x27; + JSON.stringify([].slice.apply(arguments)));
+    }
+
+    return;
+  }
+
+  return ga;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+|Value|Notes|
+|------|-----|
+|args.category|`String`. Required. A string for categorizing all user timing variables into logical groups.|
+|args.var|`String`. Required. Name of the variable being recorded.|
+|args.value|`Int`. Required. Number of milliseconds elapsed time to report.|
+|args.label|`String`. Optional. It can improved visibility in user timing reports.|
+
+#### ReactGA.<span class="apidocCodeKeywordSpan">ga</span>()
+
+The original `ga` function can be accessed via this method. This gives developers the flexibility of directly
+using `ga.js` features that have not yet been implemented in `ReactGA`. No validations will be done
+by `ReactGA` as it is being bypassed if this approach is used.
+
+If no arguments are passed to `ReactGA.ga()`, the `ga` object is returned instead.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.initialize" id="apidoc.element.react-ga.initialize">
+        function <span class="apidocSignatureSpan">react-ga.</span>initialize
+        <span class="apidocSignatureSpan">(gaTrackingID, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">initialize = function (gaTrackingID, options) {
+  if (!gaTrackingID) {
+    warn(&#x27;gaTrackingID is required in initialize()&#x27;);
+    return;
+  }
+
+  if (options) {
+    if (options.debug &#x26;&#x26; options.debug === true) {
+      _debug = true;
+    }
+
+    if (options.titleCase === false) {
+      _titleCase = false;
+    }
+  }
+
+  // https://developers.google.com/analytics/devguides/collection/analyticsjs/
+  // jscs:disable
+  (function (i, s, o, g, r, a, m) {
+    i[&#x27;GoogleAnalyticsObject&#x27;] = r;
+    i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments);
+    }, i[r].l = 1 * new Date();
+    a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0];
+    a.async = 1;
+    a.src = g;
+    m.parentNode.insertBefore(a, m);
+  })(window, document, &#x27;script&#x27;, &#x27;https://www.google-analytics.com/analytics.js&#x27;, &#x27;ga&#x27;);
+  // jscs:enable
+
+  if (options &#x26;&#x26; options.gaOptions) {
+    ga(&#x27;create&#x27;, gaTrackingID, options.gaOptions);
+  } else {
+    ga(&#x27;create&#x27;, gaTrackingID, &#x27;auto&#x27;);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+var React = require(&#x27;react&#x27;);
+var ReactDOM = require(&#x27;react-dom&#x27;);
+var Router = require(&#x27;react-router&#x27;);
+var routes = require(&#x27;./routes&#x27;);
+
+...
+var ReactGA = require(&#x27;react-ga&#x27;);
+ReactGA.<span class="apidocCodeKeywordSpan">initialize</span>(&#x27;UA-000000-01&#x27;);
+...
+
+function logPageView() {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
+}
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.modalview" id="apidoc.element.react-ga.modalview">
+        function <span class="apidocSignatureSpan">react-ga.</span>modalview
+        <span class="apidocSignatureSpan">(modalName)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">modalview = function (modalName) {
+  if (!modalName) {
+    warn(&#x27;modalName is required in .modalview(modalName)&#x27;);
+    return;
+  }
+
+  modalName = trim(modalName);
+  modalName = removeLeadingSlash(modalName);
+
+  if (modalName === &#x27;&#x27;) {
+    warn(&#x27;modalName cannot be an empty string or a single / in .modalview()&#x27;);
+    return;
+  }
+
+  if (typeof ga === &#x27;function&#x27;) {
+    modalName = trim(modalName);
+    var path = &#x27;/modal/&#x27; + modalName;
+    ga(&#x27;send&#x27;, &#x27;pageview&#x27;, path);
+
+    if (_debug) {
+      log(&#x27;called ga(\&#x27;send\&#x27;, \&#x27;pageview\&#x27;, path);&#x27;);
+      log(&#x27;with path: &#x27; + path);
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+|Value|Notes|
+|------|-----|
+|path|`String`. e.g. &#x27;/get-involved/other-ways-to-help&#x27;|
+
+See example above for use with `react-router`.
+
+#### ReactGA.<span class="apidocCodeKeywordSpan">modalview</span>(modalName)
+
+A modal view is often an equivalent to a pageview in our UX, but without a change in URL that would record a standard GA pageview
+. For example, a &#x27;contact us&#x27; modal may be accessible from any page in a site, even if we don&#x27;t have a standalone
+ &#x27;contact us&#x27; page on its own URL. In this scenario, the modalview should be recorded using this function.
+
+###### Example
+
+```js
+ReactGA.modalview(&#x27;/about/contact-us&#x27;);
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.outboundLink" id="apidoc.element.react-ga.outboundLink">
+        function <span class="apidocSignatureSpan">react-ga.</span>outboundLink
+        <span class="apidocSignatureSpan">(args, hitCallback)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">outboundLink = function (args, hitCallback) {
+  if (typeof hitCallback !== &#x27;function&#x27;) {
+    warn(&#x27;hitCallback function is required&#x27;);
+    return;
+  }
+
+  if (typeof ga === &#x27;function&#x27;) {
+
+    // Simple Validation
+    if (!args || !args.label) {
+      warn(&#x27;args.label is required in outboundLink()&#x27;);
+      return;
+    }
+
+    // Required Fields
+    var fieldObject = {
+      hitType: &#x27;event&#x27;,
+      eventCategory: &#x27;Outbound&#x27;,
+      eventAction: &#x27;Click&#x27;,
+      eventLabel: _format(args.label)
+    };
+
+    var safetyCallbackCalled = false;
+    var safetyCallback = function () {
+
+      // This prevents a delayed response from GA
+      // causing hitCallback from being fired twice
+      safetyCallbackCalled = true;
+
+      hitCallback();
+    };
+
+    // Using a timeout to ensure the execution of critical application code
+    // in the case when the GA server might be down
+    // or an ad blocker prevents sending the data
+
+    // register safety net timeout:
+    var t = setTimeout(safetyCallback, 250);
+
+    var clearableCallbackForGA = function () {
+      clearTimeout(t);
+      if (!safetyCallbackCalled) {
+        hitCallback();
+      }
+    };
+
+    fieldObject.hitCallback = clearableCallbackForGA;
+
+    // Send to GA
+    this.send(fieldObject);
+  } else {
+    // if ga is not defined, return the callback so the application
+    // continues to work as expected
+    setTimeout(hitCallback, 0);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+Usage without arguments:
+
+```js
+var ga = ReactGA.ga();
+ga(&#x27;send&#x27;, &#x27;pageview&#x27;, &#x27;/mypage&#x27;);
+```
+
+#### ReactGA.<span class="apidocCodeKeywordSpan">outboundLink</span>(args, hitCallback)
+
+Tracking links out to external URLs (including id.webmaker.org for OAuth 2.0 login flow). A non-programmatic approach is found in
+ the next section, by using an `&#x3c;OutboundLink&#x3e;` component.
+
+###### Example
+
+```js
+ReactGA.outboundLink({
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.pageview" id="apidoc.element.react-ga.pageview">
+        function <span class="apidocSignatureSpan">react-ga.</span>pageview
+        <span class="apidocSignatureSpan">(path)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pageview = function (path) {
+  if (!path) {
+    warn(&#x27;path is required in .pageview()&#x27;);
+    return;
+  }
+
+  path = trim(path);
+  if (path === &#x27;&#x27;) {
+    warn(&#x27;path cannot be an empty string in .pageview()&#x27;);
+    return;
+  }
+
+  if (typeof ga === &#x27;function&#x27;) {
+    ga(&#x27;send&#x27;, &#x27;pageview&#x27;, path);
+
+    if (_debug) {
+      log(&#x27;called ga(\&#x27;send\&#x27;, \&#x27;pageview\&#x27;, path);&#x27;);
+      log(&#x27;with path: &#x27; + path);
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+...
+var ReactGA = require(&#x27;react-ga&#x27;);
+ReactGA.initialize(&#x27;UA-000000-01&#x27;);
+...
+
+function logPageView() {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.<span class="apidocCodeKeywordSpan">pageview</span>(window.location.pathname);
+}
+
+var app = document.getElementById(&#x27;app&#x27;);
+ReactDOM.render(&#x3c;Router routes={routes} onUpdate={logPageView} /&#x3e;, app);
+
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.send" id="apidoc.element.react-ga.send">
+        function <span class="apidocSignatureSpan">react-ga.</span>send
+        <span class="apidocSignatureSpan">(fieldObject)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">send = function (fieldObject) {
+  if (typeof ga === &#x27;function&#x27;) {
+    ga(&#x27;send&#x27;, fieldObject);
+
+    if (_debug) {
+      log(&#x27;called ga(\&#x27;send\&#x27;, fieldObject);&#x27;);
+      log(&#x27;with fieldObject: &#x27; + JSON.stringify(fieldObject));
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.set" id="apidoc.element.react-ga.set">
+        function <span class="apidocSignatureSpan">react-ga.</span>set
+        <span class="apidocSignatureSpan">(fieldsObject)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">set = function (fieldsObject) {
+  if (typeof ga === &#x27;function&#x27;) {
+    if (!fieldsObject) {
+      warn(&#x27;`fieldsObject` is required in .set()&#x27;);
+      return;
+    }
+
+    if (typeof fieldsObject !== &#x27;object&#x27;) {
+      warn(&#x27;Expected `fieldsObject` arg to be an Object&#x27;);
+      return;
+    }
+
+    if (Object.keys(fieldsObject).length === 0) {
+      warn(&#x27;empty `fieldsObject` given to .set()&#x27;);
+    }
+
+    ga(&#x27;set&#x27;, fieldsObject);
+
+    if (_debug) {
+      log(&#x27;called ga(\&#x27;set\&#x27;, fieldsObject);&#x27;);
+      log(&#x27;with fieldsObject: &#x27; + JSON.stringify(fieldsObject));
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+...
+var ReactGA = require(&#x27;react-ga&#x27;);
+ReactGA.initialize(&#x27;UA-000000-01&#x27;);
+...
+
+function logPageView() {
+  ReactGA.<span class="apidocCodeKeywordSpan">set</span>({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
+}
+
+var app = document.getElementById(&#x27;app&#x27;);
+ReactDOM.render(&#x3c;Router routes={routes} onUpdate={logPageView} /&#x3e;, app);
+
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.timing" id="apidoc.element.react-ga.timing">
+        function <span class="apidocSignatureSpan">react-ga.</span>timing
+        <span class="apidocSignatureSpan">(args)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">timing = function (args) {
+  if (typeof ga === &#x27;function&#x27;) {
+    if (!args || !args.category || !args.variable
+        || !args.value || typeof args.value !== &#x27;number&#x27;) {
+      warn(&#x27;args.category, args.variable &#x27; +
+            &#x27;AND args.value are required in timing() &#x27; +
+            &#x27;AND args.value has to be a number&#x27;);
+      return;
+    }
+
+    //Required Fields
+    var fieldObject = {
+      hitType: &#x27;timing&#x27;,
+      timingCategory: _format(args.category),
+      timingVar: _format(args.variable),
+      timingValue: args.value
+    };
+
+    if (args.label) {
+      fieldObject.timingLabel = _format(args.label);
+    }
+
+    this.send(fieldObject);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+|args.category|`String`. Required. A top level category for these events. E.g. &#x27;User&#x27;, &#x27;Navigation&#x27;, &#x27;App
+ Editing&#x27;, etc.|
+|args.action|`String`. Required. A description of the behaviour. E.g. &#x27;Clicked Delete&#x27;, &#x27;Added a component&#x27;, &#
+x27;Deleted account&#x27;, etc.|
+|args.label|`String`. Optional. More precise labelling of the related action. E.g. alongside the &#x27;Added a component&#x27; action
+, we could add the name of a component as the label. E.g. &#x27;Survey&#x27;, &#x27;Heading&#x27;, &#x27;Button&#x27;, etc.|
+|args.value|`Int`. Optional. A means of recording a numerical value against an event. E.g. a rating, a score, etc.|
+|args.nonInteraction|`Boolean`. Optional. If an event is not triggered by a user interaction, but instead by our code (e.g. on page
+ load, it should be flagged as a `nonInteraction` event to avoid skewing bounce rate data.|
+|args.transport|`String`. Optional. This specifies the transport mechanism with which hits will be sent. Valid values include &#
+x27;beacon&#x27;, &#x27;xhr&#x27;, or &#x27;image&#x27;.|
+
+#### ReactGA.<span class="apidocCodeKeywordSpan">timing</span>(args)
+
+Allow to measure periods of time such as AJAX requests and resources loading by sending hits using the analytics.js library. For
+ more detailed description, please refer to https://developers.google.com/analytics/devguides/collection/analyticsjs/user-timings
+.
+
+###### Example
+
+Usage:
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-ga.OutboundLink" id="apidoc.module.react-ga.OutboundLink">module react-ga.OutboundLink</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.OutboundLink.OutboundLink" id="apidoc.element.react-ga.OutboundLink.OutboundLink">
+        function <span class="apidocSignatureSpan">react-ga.</span>OutboundLink
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">OutboundLink = function (props, context, updater) {
+  // This constructor gets overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    process.env.NODE_ENV !== &#x27;production&#x27; ? warning(this instanceof Constructor, &#x27;Something is calling a React component directly
+. Use a factory or &#x27; + &#x27;JSX instead. See: https://fb.me/react-legacyfactory&#x27;) : void 0;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindPairs.length) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn&#x27;t have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    // We allow auto-mocks to proceed as if they&#x27;re returning null.
+    if (initialState === undefined &#x26;&#x26; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  _invariant(typeof initialState === &#x27;object&#x27; &#x26;&#x26; !Array.isArray(initialState), &#x27;%s.getInitialState(): must return an object or null
+&#x27;, Constructor.displayName || &#x27;ReactCompositeComponent&#x27;);
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.OutboundLink.origTrackLink" id="apidoc.element.react-ga.OutboundLink.origTrackLink">
+        function <span class="apidocSignatureSpan">react-ga.OutboundLink.</span>origTrackLink
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">origTrackLink = function () {
+  console.warn(&#x27;ga tracking not enabled&#x27;);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.OutboundLink.trackLink" id="apidoc.element.react-ga.OutboundLink.trackLink">
+        function <span class="apidocSignatureSpan">react-ga.OutboundLink.</span>trackLink
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">trackLink = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-ga.OutboundLink.propTypes" id="apidoc.module.react-ga.OutboundLink.propTypes">module react-ga.OutboundLink.propTypes</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.OutboundLink.propTypes.eventLabel" id="apidoc.element.react-ga.OutboundLink.propTypes.eventLabel">
+        function <span class="apidocSignatureSpan">react-ga.OutboundLink.propTypes.</span>eventLabel
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">eventLabel = function () { [native code] }</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-ga.OutboundLink.prototype" id="apidoc.module.react-ga.OutboundLink.prototype">module react-ga.OutboundLink.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.OutboundLink.prototype.componentDidMount" id="apidoc.element.react-ga.OutboundLink.prototype.componentDidMount">
+        function <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>componentDidMount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">componentDidMount = function () {
+  this.__isMounted = true;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.OutboundLink.prototype.componentWillUnmount" id="apidoc.element.react-ga.OutboundLink.prototype.componentWillUnmount">
+        function <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>componentWillUnmount
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">componentWillUnmount = function () {
+  this.__isMounted = false;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.OutboundLink.prototype.constructor" id="apidoc.element.react-ga.OutboundLink.prototype.constructor">
+        function <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>constructor
+        <span class="apidocSignatureSpan">(props, context, updater)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">constructor = function (props, context, updater) {
+  // This constructor gets overridden by mocks. The argument is used
+  // by mocks to assert on what gets mounted.
+
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    process.env.NODE_ENV !== &#x27;production&#x27; ? warning(this instanceof Constructor, &#x27;Something is calling a React component directly
+. Use a factory or &#x27; + &#x27;JSX instead. See: https://fb.me/react-legacyfactory&#x27;) : void 0;
+  }
+
+  // Wire up auto-binding
+  if (this.__reactAutoBindPairs.length) {
+    bindAutoBindMethods(this);
+  }
+
+  this.props = props;
+  this.context = context;
+  this.refs = emptyObject;
+  this.updater = updater || ReactNoopUpdateQueue;
+
+  this.state = null;
+
+  // ReactClasses doesn&#x27;t have constructors. Instead, they use the
+  // getInitialState and componentWillMount methods for initialization.
+
+  var initialState = this.getInitialState ? this.getInitialState() : null;
+  if (process.env.NODE_ENV !== &#x27;production&#x27;) {
+    // We allow auto-mocks to proceed as if they&#x27;re returning null.
+    if (initialState === undefined &#x26;&#x26; this.getInitialState._isMockFunction) {
+      // This is probably bad practice. Consider warning here and
+      // deprecating this convenience.
+      initialState = null;
+    }
+  }
+  _invariant(typeof initialState === &#x27;object&#x27; &#x26;&#x26; !Array.isArray(initialState), &#x27;%s.getInitialState(): must return an object or null
+&#x27;, Constructor.displayName || &#x27;ReactCompositeComponent&#x27;);
+
+  this.state = initialState;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.OutboundLink.prototype.handleClick" id="apidoc.element.react-ga.OutboundLink.prototype.handleClick">
+        function <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>handleClick
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">handleClick = function (e) {
+  e.preventDefault();
+  var props = this.props;
+  var eventMeta = { label: props.eventLabel };
+  OutboundLink.trackLink(eventMeta, function () {
+    if (props.target === NEWTAB) {
+      window.open(props.to, NEWTAB);
+    } else {
+      window.location.href = props.to;
+    }
+  });
+
+  if (props.onClick) {
+    props.onClick(e);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.OutboundLink.prototype.render" id="apidoc.element.react-ga.OutboundLink.prototype.render">
+        function <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.</span>render
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">render = function () {
+  var props = assign({}, this.props, {
+    href: this.props.to,
+    onClick: this.handleClick
+  });
+  delete props.eventLabel;
+  return React.createElement(&#x27;a&#x27;, props);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+function logPageView() {
+  ReactGA.set({ page: window.location.pathname });
+  ReactGA.pageview(window.location.pathname);
+}
+
+var app = document.getElementById(&#x27;app&#x27;);
+ReactDOM.<span class="apidocCodeKeywordSpan">render</span>(&#x3c;Router routes={routes} onUpdate={logPageView} /&#x3e;, app);
+
+```
+
+### With bower
+
+When included as a script tag, a variable `ReactGA` is exposed in the global scope.
+...</pre></li>
+    </ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-ga.OutboundLink.prototype.__reactAutoBindPairs" id="apidoc.module.react-ga.OutboundLink.prototype.__reactAutoBindPairs">module react-ga.OutboundLink.prototype.__reactAutoBindPairs</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.OutboundLink.prototype.__reactAutoBindPairs.1" id="apidoc.element.react-ga.OutboundLink.prototype.__reactAutoBindPairs.1">
+        function <span class="apidocSignatureSpan">react-ga.OutboundLink.prototype.__reactAutoBindPairs.</span>1
+        <span class="apidocSignatureSpan">(e)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">1 = function (e) {
+  e.preventDefault();
+  var props = this.props;
+  var eventMeta = { label: props.eventLabel };
+  OutboundLink.trackLink(eventMeta, function () {
+    if (props.target === NEWTAB) {
+      window.open(props.to, NEWTAB);
+    } else {
+      window.location.href = props.to;
+    }
+  });
+
+  if (props.onClick) {
+    props.onClick(e);
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.react-ga.plugin" id="apidoc.module.react-ga.plugin">module react-ga.plugin</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.plugin.execute" id="apidoc.element.react-ga.plugin.execute">
+        function <span class="apidocSignatureSpan">react-ga.plugin.</span>execute
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">execute = function () {
+  var args = Array.prototype.slice.call(arguments);
+
+  var pluginName = args[0];
+  var action = args[1];
+  var payload;
+  var actionType;
+
+  if (args.length === 3) {
+    payload = args[2];
+  } else {
+    actionType = args[2];
+    payload = args[3];
+  }
+
+  if (typeof ga === &#x27;function&#x27;) {
+    if (typeof pluginName !== &#x27;string&#x27;) {
+      warn(&#x27;Expected `pluginName` arg to be a String.&#x27;);
+    } else if (typeof action !== &#x27;string&#x27;) {
+      warn(&#x27;Expected `action` arg to be a String.&#x27;);
+    } else {
+      var command = pluginName + &#x27;:&#x27; + action;
+      payload = payload || null;
+      if (actionType &#x26;&#x26; payload) {
+        ga(command, actionType, payload);
+        if (_debug) {
+          log(&#x27;called ga(\&#x27;&#x27; + command + &#x27;\&#x27;);&#x27;);
+          log(&#x27;actionType: &#x22;&#x27; + actionType + &#x27;&#x22; with payload: &#x27; + JSON.stringify(payload));
+        }
+      } else if (payload) {
+        ga(command, payload);
+        if (_debug) {
+          log(&#x27;called ga(\&#x27;&#x27; + command + &#x27;\&#x27;);&#x27;);
+          log(&#x27;with payload: &#x27; + JSON.stringify(payload));
+        }
+      } else {
+        ga(command);
+        if (_debug) {
+          log(&#x27;called ga(\&#x27;&#x27; + command + &#x27;\&#x27;);&#x27;);
+        }
+
+      }
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+|Value|Notes|
+|------|-----|
+|name|`String`. Required. The name of the plugin to be required. Note: if the plugin is not an official analytics.js plugin, it
+must be provided elsewhere on the page.|
+|options|`Object`. Optional. An initialization object that will be passed to the plugin constructor upon instantiation.|
+
+
+#### ReactGA.plugin.<span class="apidocCodeKeywordSpan">execute</span>(pluginName, action, [actionType], [payload])
+
+Execute the `action` for the `pluginName` with the payload.
+
+###### Example
+
+```js
+ReactGA.plugin.execute(&#x27;ecommerce&#x27;, &#x27;addTransaction&#x27;, {
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.react-ga.plugin.require" id="apidoc.element.react-ga.plugin.require">
+        function <span class="apidocSignatureSpan">react-ga.plugin.</span>require
+        <span class="apidocSignatureSpan">(name, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">require = function (name, options) {
+  if (typeof ga === &#x27;function&#x27;) {
+
+    // Required Fields
+    if (!name) {
+      warn(&#x27;`name` is required in .require()&#x27;);
+      return;
+    }
+
+    name = trim(name);
+    if (name === &#x27;&#x27;) {
+      warn(&#x27;`name` cannot be an empty string in .require()&#x27;);
+      return;
+    }
+
+    // Optional Fields
+    if (options) {
+      if (typeof options !== &#x27;object&#x27;) {
+        warn(&#x27;Expected `options` arg to be an Object&#x27;);
+        return;
+      }
+
+      if (Object.keys(options).length === 0) {
+        warn(&#x27;Empty `options` given to .require()&#x27;);
+      }
+
+      ga(&#x27;require&#x27;, name, options);
+
+      if (_debug) {
+        log(&#x27;called ga(\&#x27;require\&#x27;, \&#x27;&#x27; + name + &#x27;\&#x27;, &#x27; + JSON.stringify(options) + &#x27;);&#x27;);
+      }
+
+      return;
+    } else {
+      ga(&#x27;require&#x27;, name);
+
+      if (_debug) {
+        log(&#x27;called ga(\&#x27;require\&#x27;, \&#x27;&#x27; + name + &#x27;\&#x27;);&#x27;);
+      }
+
+      return;
+    }
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+|Value|Notes|
+|------|-----|
+|args.description|`String`. Optional. Description of what happened.|
+|args.fatal|`String`. Optional. Set to `true` if it was a fatal exception.|
+
+
+#### ReactGA.plugin.<span class="apidocCodeKeywordSpan">require</span>(name, [options])
+
+Require GA plugins.
+
+###### Example
+```js
+ReactGA.plugin.require(&#x27;localHitSender&#x27;, { path: &#x27;/log&#x27;, debug: true });
+```
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
